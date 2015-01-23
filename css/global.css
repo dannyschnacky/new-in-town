@@ -1,0 +1,30 @@
+#map-canvas {
+	height: 200px;
+}
+#resultsTable {
+	text-align: center;
+	width: 100%;
+	color: #333;
+	padding: 20px 0 0;
+}
+#resultsTable th {
+	background: #333;
+	color: #fff;
+	text-shadow: none;
+	padding: 10px 0;
+}
+#resultsTable td {
+	list-style: none;
+	border: 1px solid #ccc;
+}
+#results td a {
+	color: #333;
+	font-size: 20px;
+	line-height: 40px;
+	text-decoration: none;
+	width: 100%;
+	display: block;
+}
+#results tr:nth-child(odd) {
+	background: #ececec;
+}

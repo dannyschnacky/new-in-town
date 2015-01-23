@@ -1,0 +1,96 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>New In Town?</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="//code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyBJlQoa9F9Unp1Dtn31d7yA3AEaV--7fqo"></script>
+    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJlQoa9F9Unp1Dtn31d7yA3AEaV--7fqo&sensor=false"></script>-->
+    <script src="js/findLocation.js"></script>
+</head> 
+<body>
+
+<div data-role="page" id="index">
+
+    <div data-role="header">
+        <h1>New In Town?</h1>
+    </div><!-- /header -->
+
+    <div data-role="content">
+        <center>
+            <h4>You are here:</h4>
+            <div id="location">Your location</div>
+        </center>  
+        <ul id="categories" data-role="listview" data-inset="true" data-filter="false">
+            <li><a data-id="restaurant" href="#listing">Restaurants</a></li>
+            <li><a data-id="" href="#listing">For Singles</a></li>
+            <li><a data-id="night_club" href="#listing">Night Life</a></li>
+            <li><a data-id="" href="#listing">Family Activities</a></li>
+            <li><a data-id="" href="#listing">Sporting Events</a></li>
+            <li><a data-id="shopping_mall" href="#listing">Shopping</a></li>
+            <li><a data-id="" href="#listing">Concerts</a></li>
+            <li><a data-id="park" href="#listing">Parks and Outdoors</a></li>
+            <li><a data-id="movie_theater" href="#listing">Movies/Theatre</a></li>
+            <li><a data-id="police" href="#listing">Emergency Services</a></li>
+            <li><a data-id="gas_station" href="#listing">Gas Station</a></li>
+        </ul>
+        <div id="map-canvas"></div>
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h1>&copy; 2014 New In Town?</h1>
+    </div>
+        <input type="hidden" id="lat" value="">
+        <input type="hidden" id="lng" value="">
+        <input type="hidden" id="place" value="">
+</div><!-- /home page -->
+<div data-role="page" id="listing">
+    <div data-role="header">
+        <div data-role="navbar" data-iconpos="left">
+          <ul>
+            <li><a href="#index" data-icon="home">Home</a></li>
+          </ul>
+        </div>
+    </div><!-- /header -->
+
+    <div data-role="content" id="results">
+
+    </div>
+
+    <div data-role="footer">
+        <h1>&copy; 2014 New In Town?</h1>
+    </div>
+</div>
+
+<div data-role="page" id="details">
+    <div data-role="header">
+        <div data-role="navbar" data-iconpos="left">
+          <ul>
+            <li><a href="#index" data-icon="home">Home</a></li>
+            <li><a href="#listing" data-icon="search">Back to Results</a></li>
+          </ul>
+        </div>
+    </div><!-- /header -->
+
+    <div data-role="content">
+        <div id="detailsMap">
+
+        </div>
+        <div id="detailsContent">
+            
+        </div>
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h1>&copy; 2014 New In Town</h1>
+    </div>
+</div><!-- /results page -->
+<script>
+   
+</script>
+</body>
+</html>
